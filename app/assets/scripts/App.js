@@ -1,11 +1,11 @@
-// import Person from './modules/Person';
-// import won't work without babel?
-var Person = require('./modules/Person');
-var $ = require('jquery');
+// require is a node.js function that can run with webpack
+// var $ = require('jquery');
+// var MobileMenu  = require('./modules/MobileMenu');
 
-console.log('Testing 123');
+// babel allows the use of the ES6 import statement
+import MobileMenu from './modules/MobileMenu';
 
-var john = new Person('John Doe', 'blue');
-john.greet();
+var mobileMenu = new MobileMenu();
 
-$('h1').remove();
+
+
